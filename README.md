@@ -35,4 +35,4 @@ git clone https://github.com/IyedAcheche/iyed-acheche-personal-website.git
 
 2. Open `index.html` in your browser
 
-No build process or dependencies required - just pure HTML, CSS, and JavaScript! 
+No build process or dependencies required - just pure HTML, CSS, and JavaScript!
