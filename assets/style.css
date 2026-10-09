@@ -82,12 +82,6 @@ details>summary::-webkit-details-marker{display:none}
 .more summary:hover{color:var(--purple)}
 .more p{margin-top:8px}
 
-.chips{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:18px 0 0;padding:0;list-style:none;border-top:1px solid var(--ink);max-width:720px}
-.chips li{padding:18px 16px 18px 0;border-right:1px solid var(--ink);font-size:clamp(18px,1.8vw,24px);font-weight:700;letter-spacing:-.02em;line-height:1.15}
-.chips li:not(:first-child){padding-left:16px}
-.chips li:last-child{border-right:0}
-@media (max-width:819px){.chips{grid-template-columns:repeat(2,minmax(0,1fr))}.chips li{border-bottom:1px solid var(--ink);padding:14px 12px 14px 0}.chips li:nth-child(2n){border-right:0}.chips li:nth-child(2n+1){padding-left:0}.chips li:nth-child(2n){padding-left:14px}}
-
 /* work */
 .sect{margin:0 0 clamp(40px,6vw,72px)}
 .sect>h2{margin:0 0 14px;font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
