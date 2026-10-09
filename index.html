@@ -4,109 +4,49 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Iyed Acheche</title>
-<meta name="description" content="Iyed Acheche. From Sousse, Tunisia, studying computer information technology at TCU, building software for aviation safety.">
+<meta name="description" content="Iyed Acheche. Computer information technology at TCU, from Sousse, Tunisia. Software for aviation safety.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Iyed Acheche">
+<meta property="og:description" content="Computer information technology at TCU. From Sousse, Tunisia. I build software for aviation safety.">
+<meta property="og:image" content="https://iyedacheche.github.io/iyed-acheche-personal-website/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Hanken+Grotesk:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#14140F;--ink:#F1E9D8;--mute:#A8A292;--accent:#D97A54;--rule:rgba(241,233,216,0.16);--panel:#1D1C15}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:'Hanken Grotesk',sans-serif;min-height:100vh}
-a{color:var(--ink);text-decoration:none}
-a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
-.page{max-width:1440px;margin:0 auto;min-height:100vh;padding:48px 72px 40px;display:flex;flex-direction:column;justify-content:space-between;gap:48px}
-.top{display:flex;justify-content:space-between;align-items:baseline;font-size:16px;color:var(--mute)}
-.name{font-family:'Fraunces',serif;font-size:20px;font-weight:500;color:var(--ink)}
-.main{display:flex;justify-content:space-between;align-items:center;gap:72px}
-.copy{display:flex;flex-direction:column;gap:52px;flex:1 1 0;min-width:0}
-h1{margin:0;font-family:'Fraunces',serif;font-weight:400;font-size:clamp(34px,3.5vw,50px);line-height:1.14;letter-spacing:-0.01em;max-width:21ch}
-nav{display:flex;flex-direction:column;max-width:680px;border-bottom:1px solid var(--rule)}
-nav a{display:grid;grid-template-columns:44px 1fr auto 28px;align-items:baseline;padding:17px 0;border-top:1px solid var(--rule);transition:opacity 180ms ease-out}
-nav .num{font-size:14px;color:var(--accent)}
-nav .label{font-family:'Fraunces',serif;font-size:30px;line-height:1.1;transition:transform 180ms ease-out}
-nav .hint{font-size:15px;color:var(--mute)}
-nav .arrow{font-size:20px;text-align:right}
-nav:hover a,nav:focus-within a{opacity:.4}
-nav a:hover,nav a:focus-visible{opacity:1}
-nav a:hover .label,nav a:focus-visible .label{transform:translateX(10px)}
-.figure{flex:0 0 auto;width:400px;display:flex;flex-direction:column;gap:14px}
-.frame{position:relative;width:400px;height:500px;overflow:hidden;background:var(--panel)}
-.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity 260ms ease-out}
-.portrait{object-position:50% 20%;opacity:1}
-.tree{opacity:0}
-.cap{font-size:14px;color:var(--mute);position:relative;height:1.3em}
-.cap span{position:absolute;left:0;top:0;transition:opacity 260ms ease-out}
-.cap .c2{opacity:0}
-.page:has(a[data-key="story"]:hover) .portrait,.page:has(a[data-key="story"]:focus-visible) .portrait{opacity:0}
-.page:has(a[data-key="story"]:hover) .tree,.page:has(a[data-key="story"]:focus-visible) .tree{opacity:1}
-.page:has(a[data-key="story"]:hover) .c1,.page:has(a[data-key="story"]:focus-visible) .c1{opacity:0}
-.page:has(a[data-key="story"]:hover) .c2,.page:has(a[data-key="story"]:focus-visible) .c2{opacity:1}
-.foot{display:flex;justify-content:space-between;align-items:baseline;font-size:15px;color:var(--mute)}
-.foot div{display:flex;gap:28px;flex-wrap:wrap}
-.foot a{color:var(--mute)}
-.foot a:hover{color:var(--ink)}
-@media (max-width:1000px){
-.page{padding:32px 24px 28px;gap:32px}
-.main{flex-direction:column-reverse;align-items:stretch;gap:32px}
-.copy{gap:32px}
-.figure{display:none}
-h1{font-size:28px;line-height:1.2;max-width:none}
-nav{max-width:none}
-nav a{grid-template-columns:36px 1fr 28px;align-items:center;min-height:68px;padding:12px 0}
-nav .num{font-size:13px}
-nav .label{font-size:26px}
-nav .hint{grid-column:2;grid-row:2;font-size:14px}
-nav .arrow{grid-column:3;grid-row:1 / span 2}
-nav .num{grid-row:1 / span 2}
-nav:hover a,nav:focus-within a{opacity:1}
-nav a:hover .label{transform:none}
-.top{align-items:center}
-.top .where{display:none}
-.mobile-portrait{display:block}
-.foot .hover-note{display:none}
-}
-.mobile-portrait{display:none;width:64px;height:64px;border-radius:50%;object-fit:cover;object-position:50% 20%}
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script defer data-domain="iyed.net" src="https://plausible.io/js/script.js"></script>
 </head>
-<body>
-<div class="page">
+<body class="home">
 
-<header class="top">
-<span class="name">Iyed Acheche</span>
-<span class="where">Fort Worth, Texas</span>
-<img class="mobile-portrait" src="photos/home_portrait.jpg" alt="Portrait of Iyed Acheche">
+<header class="bar">
+  <a class="mark" href="index.html" aria-label="Iyed Acheche, home">iyed.net</a>
+  <a href="mailto:hi@iyed.net">hi@iyed.net</a>
 </header>
 
-<main class="main">
-<div class="copy">
-<h1>I grew up in Sousse, Tunisia, and I'm finishing a degree in computer information technology at TCU. Lately I build software for aviation safety.</h1>
-<nav aria-label="Main">
-<a data-key="story" href="story.html"><span class="num">01</span><span class="label">Story</span><span class="hint">Sousse to Fort Worth</span><span class="arrow">→</span></a>
-<a data-key="work" href="story.html#work"><span class="num">02</span><span class="label">Work</span><span class="hint">Experience, projects, education</span><span class="arrow">→</span></a>
-<a data-key="contact" href="story.html#contact"><span class="num">03</span><span class="label">Contact</span><span class="hint">hi@iyed.net</span><span class="arrow">→</span></a>
-<a data-key="resume" href="Iyed_Acheche_Resume.pdf"><span class="num">04</span><span class="label">Resume</span><span class="hint">PDF download</span><span class="arrow">↓</span></a>
-</nav>
-</div>
-
-<div class="figure">
-<div class="frame">
-<img class="portrait" src="photos/home_portrait.jpg" alt="Portrait of Iyed Acheche">
-<img class="tree" src="photos/home_olive_tree.jpg" alt="An olive tree in Tunisia">
-</div>
-<div class="cap"><span class="c1">Iyed Acheche</span><span class="c2">Tunisia</span></div>
-</div>
+<main class="hero">
+  <div class="hero-text">
+    <h1 class="name">Iyed<br>Acheche</h1>
+    <p class="blurb">Computer information technology at TCU. From Sousse, Tunisia. I build software for aviation safety.</p>
+  </div>
+  <div class="portrait">
+    <img src="assets/photos/portrait.jpg" alt="Portrait of Iyed Acheche" width="900" height="900">
+  </div>
 </main>
 
+<nav class="tiles" aria-label="Main">
+  <a class="tile" href="story.html"><span class="n">01</span><span><span class="t">Story</span><span class="h">Sousse to Fort Worth</span></span></a>
+  <a class="tile" href="work.html"><span class="n">02</span><span><span class="t">Work</span><span class="h">Experience, projects, education</span></span></a>
+  <a class="tile" href="contact.html"><span class="n">03</span><span><span class="t">Contact</span><span class="h">hi@iyed.net</span></span></a>
+  <a class="tile" href="Iyed_Acheche_Resume.pdf" download data-key="r"><span class="n">04</span><span><span class="t">Resume</span><span class="h">PDF download</span></span></a>
+</nav>
+
 <footer class="foot">
-<div>
-<a href="mailto:hi@iyed.net">hi@iyed.net</a>
-<a href="https://www.linkedin.com/in/iyedacheche">LinkedIn</a>
-<a href="https://github.com/IyedAcheche">GitHub</a>
-</div>
-<span class="hover-note">Hover a link to preview that page</span>
+  <span>&copy; 2026 Iyed Acheche</span>
+  <span class="keys">Shortcuts: <kbd>S</kbd> <kbd>W</kbd> <kbd>C</kbd> <kbd>R</kbd></span>
 </footer>
 
-</div>
+<script src="assets/site.js"></script>
 </body>
 </html>
