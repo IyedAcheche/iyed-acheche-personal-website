@@ -120,7 +120,9 @@ details>summary::-webkit-details-marker{display:none}
   .hero{flex-direction:column;gap:16px;padding-top:18px;padding-bottom:18px}
   h1.name{font-size:clamp(64px,21vw,140px)}
   .hero-text{gap:20px}
-  .portrait{width:100%;height:clamp(130px,23vh,240px)}
+  /* keep a head-and-shoulders crop on phones: 4:3 minimum, grows into spare height, capped near square */
+  .portrait{flex:1 0 auto;width:min(100%,560px,calc(80vh*4/3));height:auto;aspect-ratio:4/3;max-height:min(118vw,640px)}
+  .portrait img{object-position:50% 12%}
   body.home .foot{display:none}
   .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
   .tile{min-height:88px;gap:14px;border-bottom:1px solid var(--line);padding:12px 12px 14px}
